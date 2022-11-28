@@ -1,11 +1,32 @@
 package com.basics.lambda;
 
+
+interface SayHello {
+	public void hello();
+}
+
 public class LearnLambda {
 
 	// parameter -> expression body
 
 	public static void main(String[] args) {
 		System.out.println("hello world");
+		
+		
+//		SayHello h = new SayHello() {
+//			
+//			@Override
+//			public void hello() {
+//				System.out.println("Hllo from Nishant");
+//				
+//			}
+//		};
+//		h.hello();
+		
+		SayHello h2 = () -> {
+			System.out.println("Hello from Vijay!");
+		};
+		h2.hello();
 
 		LearnLambda learn1 = new LearnLambda();
 
