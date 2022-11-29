@@ -7,7 +7,9 @@ public class Student {
 	}
 	
 	public void display() {
+		//System.out.println("the students name is: " + name);
 		System.out.println("this is a student");
+		//System.out.println("the students standard is :" + standard);
 	}
 
 }
