@@ -157,4 +157,22 @@ function addNumbers() {
 addNumbers1();
 
 
+function dogs() {
+  this.dogname = "Lab"
+  throw new error("This is not a wild dog")
+}
+
+dogs.prototype.display= function(){
+  return "this dogs breed is :" + this.dogname;
+}
+
+// constructor function 
+function Animal(dogname) {
+  this.dogname = dogname
+}
+// create an object without using the constructor 
+Animal.prototype= Object.create(dogs.prototype)
+let tommy = new Animal("German shepherd")
+console.log(tommy.display());
+
 
