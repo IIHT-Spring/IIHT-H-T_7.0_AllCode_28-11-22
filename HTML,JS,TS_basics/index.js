@@ -119,15 +119,12 @@ console.log(allFruits);
 
  // conventional method 
 
-
 let counting = () => {  // this is how you define an inline / arrow function 
    for (let i = 1; i < 10; i++) {
   console.log(i);
 }}
 
 counting();
-
-
 
 // there ar three keywords that can be used to declare a variable in javascript 
 // var -> this has a scope of a function , it can be re-declared
@@ -174,5 +171,9 @@ function Animal(dogname) {
 Animal.prototype= Object.create(dogs.prototype)
 let tommy = new Animal("German shepherd")
 console.log(tommy.display());
+
+function Greet() {
+  alert("Greetings fellow Developer")
+}
 
 
