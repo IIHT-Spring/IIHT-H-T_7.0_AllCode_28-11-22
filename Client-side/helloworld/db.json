@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "firstname": "Emily",
+      "lastname": "Joseph",
+      "age": 50,
+      "email": "ekg@gmail.com",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "firstname": "Steve",
+      "lastname": "Murphy",
+      "age": 50,
+      "email": "stevetva@gmail.com",
+      "id": 3
+    }
+  ]
+}
