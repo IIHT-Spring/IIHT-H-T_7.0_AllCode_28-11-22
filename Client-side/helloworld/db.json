@@ -16,6 +16,14 @@
       "age": 50,
       "email": "stevetva@gmail.com",
       "id": 3
+    },
+    {
+      "firstname": "Nishant",
+      "lastname": "Gupta",
+      "age": 32,
+      "gender": "male",
+      "email": "nishant@email.com",
+      "id": 4
     }
   ]
 }
