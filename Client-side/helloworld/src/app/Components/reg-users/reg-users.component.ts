@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import User from 'src/app/Entity/user';
 import { UserService } from 'src/app/Services/user.service';
 
 @Component({
@@ -8,14 +9,27 @@ import { UserService } from 'src/app/Services/user.service';
 })
 export class RegUsersComponent implements OnInit {
 
+  users :User[] = [];
 
-
-
-
-  
   constructor(private userService:UserService) { }
 
-  ngOnInit(): void {
+
+  deleteRow(user,index) {
+    const observables = this.userService.deleteUsers(user);
+    observables.subscribe((response:any) => {
+      console.log(response);
+      this.users.splice(index,1);
+      
+    })
+  }
+
+  ngOnInit():void {
+    const promise = this.userService.getUsers();
+    promise.subscribe((response) => {
+      console.log(response);
+      this.users = response as User[];
+    })
+
   }
 
 }
